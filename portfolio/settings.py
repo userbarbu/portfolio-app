@@ -34,7 +34,6 @@ INSTALLED_APPS = [
     'jobs.apps.JobsConfig',
     'blog.apps.BlogConfig',
 
-
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -130,3 +129,47 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
+
+
+
+# STATICFILES_FINDERS = (
+#     'django.contrib.staticfiles.finders.FileSystemFinder',
+#     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+#     'compressor.finders.CompressorFinder',
+# )
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+    
+)
+
+
+
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA_URL = '/media/'
+
+# COMPRESS_OFFLINE = False
+
+# COMPRESS_OUTPUT_DIR = ''
+
+# try:
+#     from local_settings import *
+# except ImportError:
+#     pass
+
+# NODE_ENV = 'development' if DEBUG else 'production'
+
+# COMPRESS_PRECOMPILERS = (
+#     ('text/x-scss', 'node_modules/.bin/node-sass {infile} {outfile}'),
+#     ('text/jsx', 'NODE_ENV={} node_modules/.bin/browserifyinc '
+#                  '--debug '
+#                  '-t babelify {{infile}} -o {{outfile}}'.format(NODE_ENV)),
+# )
+
+# if not DEBUG:
+#     COMPRESS_OFFLINE = True
+#     COMPRESS_PRECOMPILERS = (
+#     ('text/x-scss', 'node_modules/.bin/node-sass {infile} {outfile}'),
+#     ('text/jsx', 'NODE_ENV=production node_modules/.bin/browserify '
+#                  '-t babelify {infile} -o {outfile}'),
+# )

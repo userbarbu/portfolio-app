@@ -1,8 +1,37 @@
-<p>
-    <h1>About Me</h1>
-
+<head>
+        {% load static %}
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </head>
+<body>
     <p>
-        <h3>Hello, my name is Dragos, and  I am a problem solver !</h3>
-    </p>
-</p>
-<a href="{% url 'homepage' %}">HOME</a>
+            <h2>About Me</h2>
+        
+            <p>
+                <h3></h3>
+            </p>
+        </p>
+    
+       
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">ID Card</span>
+                    <p>Hello, my name is Dragos, and  I am a problem solver !</p>
+                </div>
+                
+                <img src="/media/assets/gordon.jpg" sizes="5">
+                
+                <div class="card-action">
+                    <a href="../">Home</a>
+                    <a href="#">My Projects</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+</body>
